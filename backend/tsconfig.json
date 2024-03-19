@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "outDir": "dist",
+        "outDir": "./dist",
         "sourceMap": true,
         "target": "ES2020",
-        "module": "ESNext",
+        "module": "CommonJS",
         "strict": true,
         "noImplicitAny": true,
         "esModuleInterop": true,

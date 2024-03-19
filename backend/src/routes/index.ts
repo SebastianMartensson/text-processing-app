@@ -3,6 +3,6 @@ import fileRoutes from './fileRoutes/fileUploadRoute';
 
 const router = express.Router();
 
-router.use('/upload', fileRoutes);
+router.use('/file', fileRoutes);
 
 export default router;
