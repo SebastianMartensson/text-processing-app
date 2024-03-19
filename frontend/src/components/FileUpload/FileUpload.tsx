@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
-import { FileUploadSchema } from './interface/FileUploadSchema';
+import { FileUploadSchema } from '../../utils/schema/FileUploadSchema.ts';
 import { useDropzone } from 'react-dropzone';
+import './FileUpload.css';
 
 const FileUpload = () => {
   const [response, setResponse] = useState<string | null>(null);
@@ -16,7 +17,6 @@ const FileUpload = () => {
 
     const file = acceptedFiles[0];
     try {
-
       // Validate file using Zod schema
       FileUploadSchema.parse({
         name: file.name,
